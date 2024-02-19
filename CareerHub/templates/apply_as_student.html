@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/apply_as-student.css">
+    <link rel="stylesheet" href="../static/fontawesome/css/all.min.css">
+    <title>TheCareerHub</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="/CareerHub/templates/index.html">
+               <img src="/CareerHub/static/images/logo-transparent-png.png" alt="TheCareerHub Logo">
+            </a>
+        </div>
+        <div class="nav_menu">
+            <ul>
+                <li>
+                    <a href="/CareerHub/templates/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../templates/index.html#about">About</a>
+                </li>
+                <li>
+                    <a href="/CareerHub/templates/mentors.html">Mentors</a>
+                </li>
+                <li class="apply-dropdown">
+                    <a href="#">Apply</a>
+                    <div class="dropdown-content">
+                        <a href="/CareerHub/templates/apply_as_student.html">Apply as Student</a>
+                        <a href="/CareerHub/templates/apply_as_mentor.html">Apply as Mentor</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<hr>
+<div class="container">
+        <div class="signup">
+            <form>
+                <p><label for="full_name">Full Name: </label></p>
+                <input type="text" id="full_name" name="full_name" required>
+
+                <p><label for="email">Email: </label></p>
+                <input type="email" id="email" name="email" required>
+
+                <p><label for="phone-number">Phone Number (Include country code): </label></p>
+                <input type="tel" id="last_name" name="last_name" required>
+
+                <p><label for="job_title">Job Title: </label></p>
+                <input type="text" id="job_title" name="job_title" required>
+
+                <p><label for="induxtry">Industry:</label></p>
+                <input type="text" id="industry" name="industry">
+
+                <p><label for="experience">Years of Experience:</label></p>
+                <input type="number" id="experience" name="experience">
+
+                <p><label for="availability">Availability (days/time):</label></p>
+                <textarea id="availability" name="availability" rows="4"></textarea>
+
+                <label for="services">Select Services:</label><br>
+                <label for="career_advice">Career Advice</label><br>
+                <input type="checkbox" id="career_advice" name="services" value="career_advice">
+                <label for="resume_review">Resume Review</label><br>
+                <input type="checkbox" id="resume_review" name="services" value="resume_review">
+
+                <p><label for="company">Password (Must be greater than 6 characters): </label></p>
+                <input type="password" id="password" name="password" required>
+
+                <p><label for="confirm_password">Confirm Password: </label></p>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+
+                <label for="resume">Upload Resume (Must be in pdf, doc, or docx format):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+
+                <p><input type="submit" value="Apply"></p>
+                <p><a class="here-href" href="/CareerHub/templates/apply_as_mentor.html">You can apply as a mentor HERE</a></p>
+            </form>
+        </div>
+</body>
+</html>
