@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right, white, black, black,black,black,black, black, black, #8B0000);
+}
+
+
+
+.nav_menu {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar {
+    background: black;
+    padding: 25px 25px;
+    height: 40px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.navbar .nav_menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav_menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav_menu ul li {
+    margin-right: 20px;
+}
+
+.navbar .nav_menu ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar .nav_menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    transition: 0.65s;
+}
+
+.navbar .container a img {
+    max-height: 100%;
+    max-width: 100px;
+}
+
+.navbar .nav_menu ul li a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.apply-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.signup_student form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.signup_student label {
+    margin-bottom: 5px;
+    color: #95a5a6;
+}
+
+.signup_student input {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+}
+
+.signup_student input[type="submit"] {
+    background-color: #8B0000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', 'sans-serif';
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.signup_student a {
+    margin-bottom: 30px;
+}
+
+a:hover {
+    color: #8B0000;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.signup_student input[type="submit"]:hover {
+    background-color: lightgray;
+    color: black;
+    transition: 1s;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 350px;
+}
+
+.container form {
+    width: 600px;
+}
+
+.signup_student input[type="checkbox"] {
+     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.signup_student input[type="text"],
+.signup_student input[type="password"],
+.signup_student input[type="email"],
+.signup_student input[type="tel"],
+.signup_student input[type="number"]
+.signup_student input[type="file"] {
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    height: 30px;
+    color: white;
+}
+
+.signup_student input[type="checkbox"]:checked {
+    background-color: white;
+}
+
+textarea {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
