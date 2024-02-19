@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+body {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_menu {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar {
+    background: black;
+    padding: 25px 25px;
+    height: 40px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.navbar .nav_menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav_menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav_menu ul li {
+    margin-right: 20px;
+}
+
+.navbar .nav_menu ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar .nav_menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    transition: 0.65s;
+}
+
+.navbar .container a img {
+    max-height: 100%;
+    max-width: 100px;
+}
+
+.navbar .nav_menu ul li a:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.apply-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 420px;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.header .container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: 17px;
+    color: white;
+
+}
+
+.my_button {
+    background-color: #8B0000;
+    margin-top: 20px;
+    box-shadow: white;
+}
+
+.header img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin-top: 100px;
+}
+
+.my_button i {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.my_button a:hover {
+    background-color: lightgray;
+    color: black;
+    transition: 1s;
+}
+
+.line p {
+    margin-top: 30px;
+}
+
+.about {
+    margin-top: 300px;
+}
+.aims p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.aims h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8B0000;
+    font-size: 30px;
+}
+
+.container-sm {
+    width: 500px;
+    height: 300px;
+    background-color: #95a5a6;
+    color: black;
+
+}
+
+.small_containers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.container-sm p {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container-sm h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #8B0000;
+    margin-top: 15px;
+}
+
+.container-sm i {
+    margin-left: 8px;
+}
+
+.btnm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #8B0000;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn p {
+    margin: 10px 10px;
+}
+
+.btn a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+.container-sm {
+    border-radius: 10px;
+}
