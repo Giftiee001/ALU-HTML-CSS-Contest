@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/styles/apply_as_mentor.css">
+    <link rel="stylesheet" href="../static/styles/apply_as_student.css">
     <link rel="stylesheet" href="../static/fontawesome/css/all.min.css">
     <title>TheCareerHub</title>
 </head>
@@ -40,48 +40,53 @@
 </nav>
 <hr>
 <div class="container">
-        <div class="signup">
-            <form>
-                <p><label for="full_name">Full Name: </label></p>
-                <input type="text" id="full_name" name="full_name" required>
-
-                <p><label for="email">Email: </label></p>
-                <input type="email" id="email" name="email" required>
-
-                <p><label for="phone-number">Phone Number (Include country code): </label></p>
-                <input type="tel" id="last_name" name="last_name" required>
-
-                <p><label for="job_title">Job Title: </label></p>
-                <input type="text" id="job_title" name="job_title" required>
-
-                <p><label for="induxtry">Industry:</label></p>
-                <input type="text" id="industry" name="industry">
-
-                <p><label for="experience">Years of Experience:</label></p>
-                <input type="number" id="experience" name="experience">
-
-                <p><label for="availability">Availability (days/time):</label></p>
-                <textarea id="availability" name="availability" rows="4"></textarea>
-
-                <label for="services">Select Services:</label><br>
-                <label for="career_advice">Career Advice</label><br>
-                <input type="checkbox" id="career_advice" name="services" value="career_advice">
-                <label for="resume_review">Resume Review</label><br>
-                <input type="checkbox" id="resume_review" name="services" value="resume_review">
-
-                <p><label for="company">Password (Must be greater than 6 characters): </label></p>
-                <input type="password" id="password" name="password" required>
-
-                <p><label for="confirm_password">Confirm Password: </label></p>
-                <input type="password" id="confirm_password" name="confirm_password" required>
-
-                <label for="resume">Upload Resume (Must be in pdf, doc, or docx format):</label>
-                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+    <div class="signup_student">
+        <form>
+            <p><label for="full_name">Full Name:</label></p>
+            <input type="text" id="full_name" name="full_name" required>
 
 
-                <p><input type="submit" value="Apply"></p>
-                <p><a class="here-href" href="/CareerHub/templates/apply_as_student.html">You can apply as a student HERE</a></p>
-            </form>
-        </div>
+            <p><label for="address">Address:</label></p>
+            <input type="text" id="address" name="address">
+
+            <p><label for="phone">Phone Number:</label></p>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+            <p><label for="dob">Date of Birth:</label></p>
+            <input type="date" id="dob" name="dob" required>
+
+            <p><label for="nationality">Nationality:</label></p>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <p><label for="university">Current School/University:</label></p>
+            <input type="text" id="university" name="university" required>
+
+            <p><label for="field_of_study">Field of Study:</label></p>
+            <input type="text" id="field_of_study" name="field_of_study" required>
+
+            <p><label for="interests">Interests:</label></p>
+            <input type="text" id="interests" name="interests">
+
+            <p><label for="grade_average">Grade Average (Out of 100):</label></p>
+            <input type="number" id="grade_average" name="grade_average" min="0" max="100" required>
+
+
+            <p><label for="experience">Part-time Jobs/Internships:</label></p>
+            <textarea id="experience" name="experience" rows="4" cols="50"></textarea>
+
+            <p><label for="additional_info">Additional Information:</label></p>
+            <textarea id="additional_info" name="additional_info" rows="4" cols="50"></textarea>
+
+            <p><label for="transcript">Transcript/Grades Upload:</label></p>
+            <p>Please upload your transcript or grades (optional).</p>
+            <input type="file" id="transcript" name="transcript" accept=".pdf, .doc, .docx">
+
+
+            <p><input type="submit" value="Submit Application"></p>
+
+            <p><a class="here-href" href="">You can apply as a mentor HERE</a></p>
+        </form>
+    </div>
+</div>
 </body>
 </html>
