@@ -231,3 +231,48 @@ h3 {
 .hr {
     margin-top: 40px;
 }
+@media screen and (max-width: 767px) {
+
+
+    .mentors {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rt {
+        margin-top: 1450px;
+    }
+    
+    .aims p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .small_containers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container-sm {
+        margin: 20px 20px;
+    }
+
+    .objectives {
+        margin-top: 20px;
+    }
+
+    .aims h1 {
+        margin-top: 1px;
+    }
+
+    .container2 {
+        margin-top: 1590px;
+    }
+
+    .headng2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
